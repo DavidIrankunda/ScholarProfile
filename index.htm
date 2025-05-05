@@ -2104,6 +2104,245 @@
                 border-radius: 50px;
             }
         }
+
+        /* ===== Responsive Styles ===== */
+@media (max-width: 1200px) {
+    .contact-container, .booking-container {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-form {
+        order: -1;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-container, .about-container {
+        flex-direction: column;
+    }
+
+    .hero-content {
+        text-align: center;
+        margin-bottom: 60px;
+        max-width: 100%;
+    }
+
+    .hero-btns {
+        justify-content: center;
+    }
+
+    .hero-social {
+        justify-content: center;
+    }
+
+    .about-image {
+        margin-bottom: 40px;
+    }
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline::before {
+        left: 31px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px;
+    }
+
+    .timeline-item::after {
+        left: 21px;
+    }
+
+    .left::after, .right::after {
+        left: 21px;
+    }
+
+    .right {
+        left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+
+    .mobile-menu-btn {
+        display: flex;
+    }
+
+    .section-title h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero-title {
+        font-size: 2.8rem;
+    }
+
+    .hero-btns {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+    }
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+    }
+
+    .booking-service-options {
+        grid-template-columns: 1fr;
+    }
+
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-img-container {
+        width: 300px;
+        height: 300px;
+    }
+
+    .hero-shape {
+        width: 400px;
+        height: 400px;
+    }
+
+    .hero-shape-1 {
+        top: -200px;
+        right: -200px;
+    }
+
+    .hero-shape-2 {
+        bottom: -150px;
+        left: -150px;
+    }
+}
+
+@media (max-width: 576px) {
+    .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-subtitle {
+        padding-left: 40px;
+    }
+
+    .hero-subtitle::before {
+        width: 30px;
+    }
+
+    .footer-container {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-newsletter-form {
+        flex-direction: column;
+    }
+
+    .footer-newsletter-input {
+        border-radius: 50px;
+        margin-bottom: 10px;
+    }
+
+    .footer-newsletter-btn {
+        border-radius: 50px;
+    }
+
+    .hero-img-container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .hero-badge {
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        bottom: -20px;
+    }
+
+    .section {
+        padding: 80px 0;
+    }
+
+    .section-title {
+        margin-bottom: 40px;
+    }
+
+    .section-title h2::after {
+        width: 60px;
+        bottom: -10px;
+    }
+
+    .btn {
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-img-container {
+        width: 220px;
+        height: 220px;
+    }
+
+    .hero-shape {
+        width: 300px;
+        height: 300px;
+    }
+
+    .section-title h2 {
+        font-size: 1.6rem;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .highlight-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .highlight-icon {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+
+    .exp-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .exp-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
     </style>
 </head>
 <body>
